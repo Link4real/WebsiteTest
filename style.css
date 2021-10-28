@@ -11,14 +11,25 @@ h1 {
     
     body {
       background-color: #021f35;
+      margin: 0;
+      color: white;
+      font-family: 'Prompt', sans-serif;
     }
     
+    section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     img {
     text-align: center;
     }
 
+
     .spacer {
-        aspect-ratio: 960/300;
+        aspect-ratio: 1080/230;
         width: 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -34,18 +45,23 @@ h1 {
     .layer3 {
         background-image: url('assets/layer3.svg');
     }
+
+    .layer4 {
+        background-image: url('assets/layer4.svg');
+    }
+
     .flip {
         transform: rotate(180deg);
     }
 
     .slogan {
-        font-size: 45px;
+        font-size: 25px;
         color: white;
         text-align: center;
     }
 
     .downloadslogan {
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         text-align: center;
     }
@@ -62,6 +78,7 @@ h1 {
         margin: 4px 2px;
         transition-duration: 0.4s;
         cursor: pointer;
+        width: 250px;
     }
 
     .button1 {
@@ -92,3 +109,46 @@ h1 {
     .red {
         background-color: #dd3f31;
     }
+
+
+    ul {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+          border-right: 1px solid #737874;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #111;
+      }
+      
+      
+      img {
+      text-align: center;
+      }
+      
+      
+      .active {
+      background-color: #4a4a4a;
+      }
+      
+      li:last-child {
+        border-right: none;
+      }
